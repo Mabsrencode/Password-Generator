@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator | MabsrenCode</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      media="(prefers-color-scheme: no-preference)"
+      href="./assets/logo.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      media="(prefers-color-scheme: light)"
+      href="./assets/logo.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+      href="./assets/logo.jpg"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h1>Password<span>Generator</span></h1>
+        </div>
+        <ul class="navbar">
+          <li>
+            <div class="navlist">Contact Us</div>
+            <div class="navlist__sub">
+              <p>Contact Us</p>
+              <p>
+                <a href="mailto: dev.renielmababa@mabsrencode.com"
+                  ><i class="fa-solid fa-envelope"></i>Email</a
+                >
+              </p>
+              <p><i class="fa-solid fa-phone"></i>Phone : +63-920-574-6697</p>
+            </div>
+          </li>
+          <li>
+            <a
+              class="btn"
+              href="https://www.mabsrencode.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Need A Developer?</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="banner">
+        <div class="banner__description">
+          <h5>PASSWORD GENERATOR TOOL | MabsrenCode</h5>
+          <h2>Need a Unique And Secure Password That Will Keep You Safe?</h2>
+          <p>Generate a secure password using using this tool.</p>
+          <a class="btn" href="">Use Password Generator</a>
+          <a href="">Use Username Generator</a>
+        </div>
+        <div class="banner__image">
+          <img src="./assets/password.gif" alt="" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="generator__container">
+        <!-- <form action=""> -->
+        <div class="generator__header">
+          <h1>
+            Instantly generate a secure & random password with MabsrenCode
+            Password Generator Tool
+          </h1>
+        </div>
+        <div class="text__field">
+          <input type="text" name="" id="text__field" spellcheck="false" />
+          <i class="fa-solid fa-arrows-rotate" id="fa-arrows-rotate"></i>
+          <i class="fa-solid fa-copy" id="fa-copy"></i>
+          <span></span>
+        </div>
+
+        <div class="generator__customization__container">
+          <h1 style="text-align: center">Customize your password</h1>
+          <div class="generator__customization">
+            <div class="generator__code">
+              <h4>Password Length</h4>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__password_length"
+                  id="length12"
+                  class="custom-radio"
+                  checked
+                /><label for="length12">12</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__password_length"
+                  id="length16"
+                  class="custom-radio"
+                /><label for="length16">16</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__password_length"
+                  id="length24"
+                  class="custom-radio"
+                /><label for="length24">24</label>
+              </div>
+            </div>
+            <div class="generator__radio">
+              <h4>Password Option</h4>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__picker"
+                  id="mix"
+                  checked
+                  class="custom-radio"
+                /><label for="mix">MIX PASSWORD | SYMBOLS</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__picker"
+                  id="char"
+                  class="custom-radio"
+                /><label for="char">ALL CHARACTERS</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="radio__picker"
+                  id="allnum"
+                  class="custom-radio"
+                /><label for="allnum">ALL NUMBERS</label>
+              </div>
+            </div>
+
+            <div class="generator__checkbox">
+              <h4>Case Conversion</h4>
+              <div>
+                <input type="radio" name="case_conversion" id="upc" /><label
+                  for="upc"
+                  >Uppercase</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="case_conversion" id="lowc" /><label
+                  for="lowc"
+                  >Lowercase</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="case_conversion"
+                  id="mix_charnum"
+                  checked
+                /><label for="mix_charnum">MIX</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copy-btn">
+          <button id="copy" class="btn" onclick="btnFunction()">
+            Copy Password
+          </button>
+        </div>
+        <!-- </form> -->
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./scripts/generator.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/configs.js" defer></script>
+  </body>
+</html>
